@@ -1,0 +1,72 @@
+@import './font.css';
+:root{
+    --container-width: 1200px;
+    --white:#ffffff;
+    --bg-gray:#dddddd;
+    --text-black-1 :#000000;
+    --text-black-2:#6b6b6b;
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: var(--bg-gray);
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+.flex-center {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.img-max {
+    max-width: 100%;
+}
+.main-scope {
+    display: flex;
+    flex-direction: row;
+}
+.main-scope section {
+    width: 70%;
+}
+.main-scope aside {
+    width: 30%;
+}
+.nav-bar {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul  {
+    list-style: none;
+    padding-left: 0;
+}
+.nav-bar ul li {
+    display: inline-block;    
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.nav-link:hover {
+
+    color: var(--text-black-2);
+}
+
+.footer {
+    text-align: center;
+}
+header {
+    margin: 0;
+    background-color: white;
+}
