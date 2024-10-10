@@ -7,6 +7,7 @@ class TodoController {
     }
     create(todo) {
         try {
+            if(!todo.name) return  this.toast.showToast("O nome da tarefa não pode estar vazia!", '#danger-toast')
             this.todoRepository.create(todo)
             this.toast.showToast("Criado com sucesso!")
             this.renderTodos()
@@ -39,6 +40,12 @@ class TodoController {
         const todosList = document.querySelector(this.todosUlId)
         while (todosList.firstChild) {
             todosList.removeChild(todosList.lastChild);
+        }
+        if(_.isEmpty(todos)){
+            const li = document.createElement("li")
+            li.classList.add(['list-group-item'])
+            li.innerHTML = '<p class="text-center">Sem tarefas</p>'
+            todosList.appendChild(li)
         }
         todos.forEach(todo => {
             const li = document.createElement("li")
