@@ -1,6 +1,6 @@
 const APP_DATABASE_NAME = 'app_todos';
 
-class AppRepository {
+class TodoRepository {
     constructor(tableName) {
         this.tableName = tableName;
     }
@@ -50,4 +50,4 @@ class AppRepository {
         return JSON.parse(localStorage.getItem(this.tableName) ?? '[]')
     }
 }
-window.appRepository = new AppRepository(APP_DATABASE_NAME)
+window.todoRepository = new TodoRepository(APP_DATABASE_NAME)
