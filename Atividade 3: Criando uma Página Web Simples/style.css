@@ -19,18 +19,29 @@ body{
     max-width: var(--container-width);
     margin: 0 auto;
 }
-.flex-center {
-    flex-direction: column;
+.flex {
     display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-center {
     justify-content: center;
 }
-
+.justify-between {
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
 .img-max {
     max-width: 100%;
 }
 .main-scope {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
+    gap: 2rem;
 }
 .main-scope section {
     width: 70%;
