@@ -1,0 +1,46 @@
+:root {
+    --container-width:1200px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul, 
+li, 
+p,
+dd,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+.rounded {
+    border-radius: 4px;
+}
+
+.link {
+    display: inline-block;
+    color: var(--cor-p1);
+    font: 500 1.5rem/1.5 "Poppins", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: var(--cor-0);
+}
