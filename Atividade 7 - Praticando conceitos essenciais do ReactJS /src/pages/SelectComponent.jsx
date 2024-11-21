@@ -14,6 +14,9 @@ export default function SelectComponent()
                 <li> <Link to={routes.LIST_NAME.path} >Listagem de Nomes</Link> </li>
                 <li> <Link to={routes.REGISTER_FORM.path} >Formulário de Registro</Link> </li>
                 <li> <Link to={routes.POST.path} > Aplicação de Requisição de Dados Simples</Link> </li>
+                <li> <Link to={routes.GALERY.path} >Galeria de Imagens com Visualização Detalhada</Link> </li>
+                <li> <Link to={routes.CUSTOM_TIMER.path} >Timer com Intervalo</Link> </li>
+                <li> <Link to={routes.TABS.path} >Componentes com Tabs Navegáveis</Link> </li>
             </ul>
         </div>
     );

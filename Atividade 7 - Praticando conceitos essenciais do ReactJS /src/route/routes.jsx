@@ -5,15 +5,18 @@ import ColorChange from "../pages/ColorChange";
 import TodoApp from "../pages/TodoApp";
 import Timer from "../pages/Timer";
 import ListName from "../pages/ListName";
-import RegisterForm from "../pages/RegisterForm";
+import RegisterForm from '../pages/RegisterForm'
 import RequestApp from "../pages/RequestApp";
+import Galery from "../pages/Galery";
+import CustomTimer from "../pages/CustomTimer";
+import Tabs from "../pages/Tabs";
 export const routes = {
-    HOME: {
-        path: '/',
-        element: <SelectComponent />
+    HOME:{
+        path:'/',
+        element: <SelectComponent /> 
     },
     SIMPLE_COUNTER: {
-        path: 'simple-counter',
+        path:'simple-counter',
         element: <SampleCounter />
     },
     COLOR_CHANGE: {
@@ -21,15 +24,15 @@ export const routes = {
         element: <ColorChange />
     },
     TODO: {
-        path: '/todo',
+        path:'/todo',
         element: < TodoApp />
     },
-    TIMER: {
-        path: '/timer',
+    TIMER:{
+        path:'/timer',
         element: <Timer />
     },
     LIST_NAME: {
-        path: '/names',
+        path:'/list',
         element: <ListName />
     },
     REGISTER_FORM: {
@@ -37,7 +40,19 @@ export const routes = {
         element: <RegisterForm />
     },
     POST: {
-        path: '/post',
+        path: '/form',
         element: <RequestApp />
-    }
+    },
+    GALERY:{
+        path:'/galery',
+        element: <Galery />
+    },
+    CUSTOM_TIMER:{
+        path:'/custom-timer',
+        element: <CustomTimer />
+    },
+    TABS:{
+        path:'/tabs',
+        element: <Tabs />
+    },
 };
